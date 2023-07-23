@@ -1,3 +1,5 @@
+let colorChoice;
+
 document.addEventListener('DOMContentLoaded',() =>{
     getGridItems(16)
     let selectBtn = document.querySelector('.select-btn')
@@ -33,8 +35,21 @@ function getGridItems (size){
     for (i= 1; i <= numDiv; i++){
         let div = document.createElement('div');
         gridContainer.appendChild(div);
-        div.addEventListener('mouseover',() => div.style.backgroundColor = 'black');       
+        div.addEventListener('mouseover', divColor)   
     }
     
     gridContainer.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+}
+
+ function setColor(color){
+     colorChoice = color
+     
+ }
+
+function divColor(event){
+    if (colorChoice === 'random'){
+        event.target.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
+    }else if(colorChoice === 'black'){
+        event.target.style.backgroundColor = 'black'
+    }
 }

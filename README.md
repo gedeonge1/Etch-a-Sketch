@@ -4,7 +4,10 @@ Welcome to the Odin Etch-a-Sketch project! This is a simple web-based drawing ap
 Etch-a-Sketch is a classic toy that lets you draw by turning knobs to move a stylus around the screen. This digital version brings back the nostalgic feel of the traditional toy while allowing you to explore your creativity using modern technology
 
 # Features
-. User-friendly interface for an enjoyable drawing experience.
-. Use the arrow keys or click and drag the mouse to draw.
-. Clear button to erase the entire canvas and start over.
-. Adjustable grid size for different levels of detail in your drawings.
+ - User-friendly interface for an enjoyable drawing experience.
+
+ - Use the arrow keys or click and drag the mouse to draw.
+
+ - Clear button to erase the entire canvas and start over.
+
+ - Adjustable grid size for different levels of detail in your drawings.

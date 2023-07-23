@@ -16,4 +16,4 @@ Etch-a-Sketch is a classic toy that lets you draw by turning knobs to move a sty
  visit my site here: https://gedeonge1.github.io/Etch-a-Sketch/
 
  # Development Branch
- check the codebase: https://github.com/gedeonge1/Etch-a-Sketch
+ check the codebase: https://github.com/gedeonge1/Etch-a-Sketch/tree/develop

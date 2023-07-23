@@ -14,12 +14,20 @@ function getPopup(){
     let popupMessage = document.querySelector('#popup-message')
     if (userInput > 100 || userInput < 0){
         popupMessage.textContent = 'Please provide a number between 0 and 100!'
+        popupMessage.style.color = 'red'
+        popupMessage.style.fontSize = '17px'
     }else if (userInput === '' || userInput === null){
         popupMessage.textContent = 'please provide a number!'
+        popupMessage.style.color = 'red'
+        popupMessage.style.fontSize = '17px'
     }else if (isNaN(userInput)){
-        popupMessage.textContent = 'Text are not allowed! use number only.'    
+        popupMessage.textContent = 'Text is not allowed! use number only.'  
+        popupMessage.style.color = 'red'  
+        popupMessage.style.fontSize = '17px'
     }else{
-        popupMessage.textContent = 'Now you can play'
+        popupMessage.textContent = 'Now you can play!'
+        popupMessage.style.color = 'green'
+        popupMessage.style.fontSize = '17px'
         return userInput
     }
 }
@@ -49,7 +57,14 @@ function getGridItems (size){
 function divColor(event){
     if (colorChoice === 'random'){
         event.target.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
-    }else if(colorChoice === 'black'){
+    }else if(colorChoice === `black`){
         event.target.style.backgroundColor = 'black'
+    }else if(colorChoice === 'white'){
+        event.target.style.backgroundColor = 'white'
     }
+}
+
+function reset(){
+    let divs = document.querySelectorAll('div');
+    divs.forEach(div => div.style.backgroundColor = 'white')
 }

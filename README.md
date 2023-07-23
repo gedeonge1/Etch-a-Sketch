@@ -11,3 +11,9 @@ Etch-a-Sketch is a classic toy that lets you draw by turning knobs to move a sty
  - Clear button to erase the entire canvas and start over.
 
  - Adjustable grid size for different levels of detail in your drawings.
+
+ # Visit Site
+ visit my site here: https://gedeonge1.github.io/Etch-a-Sketch/
+
+ # Development Branch
+ check the codebase: https://github.com/gedeonge1/Etch-a-Sketch
